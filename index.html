@@ -126,7 +126,7 @@
             time = hours + ":" + (a.getMinutes() < 10 ? '0' : '') + a.getMinutes() + ":" + (a.getSeconds() < 10 ? '0' : '') + a.getSeconds() + " " + amPm;
             date = a.toLocaleDateString(undefined, options);
     
-            document.getElementById('time').innerHTML = time + "<br> on " + a.toLocaleDateString('en-US', { weekday: 'long' }) + ",<br>" + date;
+            document.getElementById('time').innerHTML = time + "<br> on " + ",<br>" + date;
         }, 1000);
     </script>
 
