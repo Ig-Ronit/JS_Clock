@@ -18,7 +18,7 @@
             <a class="navbar-brand" href="#">CodeWithRo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+                aria-label="Toggle navigation" onclick="toggleNavbar()">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -27,32 +27,29 @@
                         <a class="nav-link active" aria-current="page"
                             href="http://127.0.0.1:5500/.vscode/index.html">Home</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="https://ig-ronit.github.io/To-Do-lList/" target="_blank">My Work</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
-
                     <li class="nav-item dropdown">
-
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             More Options
                         </a>
-    
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="https://www.instagram.com/ig_ronit/" target="_blank">Instagram</a>
-                            <a class="dropdown-item" href="https://www.linkedin.com/in/ronit-kene-7b4998235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+                            <a class="dropdown-item" href="https://www.instagram.com/ig_ronit/"
+                                target="_blank">Instagram</a>
+                            <a class="dropdown-item"
+                                href="https://www.linkedin.com/in/ronit-kene-7b4998235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                target="_blank">LinkedIn</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="https://github.com/Ig-Ronit?tab=repositories" target="_blank">GitHub</a>
+                            <a class="dropdown-item" href="https://github.com/Ig-Ronit?tab=repositories"
+                                target="_blank">GitHub</a>
                         </div>
-    
                     </li>
                 </ul>
-               
             </div>
         </div>
     </nav>
@@ -68,6 +65,14 @@
         </div>
     </div>
     <script>
+                function toggleNavbar() {
+            const navbar = document.getElementById("navbarSupportedContent");
+            if (navbar.classList.contains("show")) {
+                navbar.classList.remove("show");
+            } else {
+                navbar.classList.add("show");
+            }
+        }
         let a;
         let time;
         let date;
